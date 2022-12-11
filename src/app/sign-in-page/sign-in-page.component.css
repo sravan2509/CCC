@@ -1,0 +1,225 @@
+/* .outer-container{
+    background-color: #0A2640;
+    height: 100vh;
+
+}
+.text{
+    color: white;
+    font-size: 40px;
+    margin-left: 5%;
+}
+.col-container{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    column-gap: 65%;
+    justify-content: center;
+    padding-top: 2%;
+}
+.button{
+    width:160%;
+    border-radius: 30px;
+    font-size: 20px;
+    cursor: pointer; 
+}
+
+.col-container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 40%;
+    padding-top:5%;
+    
+}
+.col1{
+    display: flex;
+    flex-direction:column;
+    line-height:4;   
+}
+h1{
+    color: white;
+}
+label{
+    color: white;
+}
+
+input{
+    width: 250%;
+    background-color: transparent;
+    color: white;
+
+}
+.text1{
+    color: white;
+    font-size: 20px;
+    
+}
+.signup-button{
+    margin-top: 30%;
+}
+.button1{
+    width: 250%;
+    font-size: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    
+} */
+.horizontal{
+    background-color: #0A2640 ;
+    height: 100vh;
+}
+.horizontal-brand{
+display: flex;
+flex-direction: row;
+margin-top: 10%;
+}
+.partition{
+    height: 100vh;
+    width: 100%;
+    
+}
+.brand{
+    margin: 20px;
+    align-items: center;
+}
+.logoSize{
+    height: 80px;
+    width: 80px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.brandname_FirstLetter{
+    font-size: 30px;
+    font-weight: 500;
+}
+.brandname_LastLetter{
+    font-size: 20px;
+    font-weight: 500;
+}
+.loginSection{
+    width: 55%;
+    margin-left: 20%;
+  margin-top: 50px;
+}
+.heading{
+    font-size: 25px;
+    font-weight: 600;
+    
+    color: white;
+}
+.text{
+    font-size: 15px;
+    font-weight: 400;
+    padding-bottom:20px;
+}
+.btn{
+    cursor: pointer;
+    width: 100%;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+    font-family: 'Muli', sans-serif;
+    margin-bottom:10px;
+}
+.icon{
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+}
+.sub-heading{
+    font-size: 13px;
+    font-weight: 500;
+}
+.margin-text{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 20px;
+
+
+}
+.fieldnames{
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Muli', sans-serif;
+    padding-bottom:10px;
+    color: white;
+
+}
+input{
+    width: 100%;
+    padding: 15px 0px 15px 30px;
+    border-radius: 10px;
+    border-color: white;
+    text-decoration: none;
+    /* border: 1px solid lightgray; */
+    margin-bottom: 10px;
+    background-color:inherit;
+    color: white;
+
+
+}
+.forgotPassword{
+    font-size: 13px;
+    font-weight: 400;
+    float: right;
+    padding-bottom:10px;
+    cursor: pointer;
+
+}
+button{
+    text-decoration: none;
+    border: none;
+
+
+}
+.loginBtn{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Muli', sans-serif;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin:50px 0px;
+
+}
+.signup{
+    font-size: 15px;
+    font-weight: 400;
+    color:white;
+
+}
+.createAccount{
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+p{
+    font-size: 10px;
+}
+
+/* RIGHTSIDE PART CSS  */
+
+
+.landing-img{
+    height: 800px;
+    width: 500px;
+    margin-left: 20px;
+    }
+    .right-side-image{
+        margin-top: 15%;
+    }
+    asl-google-signin-button{
+        margin-bottom: 20px !important;
+    }

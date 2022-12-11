@@ -1,0 +1,213 @@
+/* color codes */
+
+/* primary : #FFC006 */
+/* background color : #f3f3f3 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.circle {
+  height: 35px;
+  width: 35px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+}
+
+.profileContainer {
+  /* background-color: lightblue; */
+  margin: 0;
+  padding: 10px 10px 20px 30px;
+  width: 75vw;
+  min-width: 620px;
+}
+
+.profileHeadContainer {
+  width: 100%;
+  /* background-color: dodgerblue; */
+  position: relative;
+  height: 320px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 50px;
+}
+.profileHeadBackgoundBox {
+  height: 180px;
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+.profileHeadContentContainer {
+  /* width: 100%; */
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-30%);
+}
+.profileIcon {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.profileHeadContent {
+  /* background-color: yellow; */
+  margin-top: 15px;
+  padding: 10px 25px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.saveBtn {
+  background-color: #0A2640;
+  height: auto;
+  width: 120px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 13px;
+  min-width: 80px;
+  margin: 10px 30px;
+  cursor: pointer;
+}
+.profileHeadContentHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.profileName {
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Muli', sans-serif;
+}
+.editIcon {
+  height: 12px;
+  width: 12px;
+}
+.editProfileText {
+  font-size: 13px;
+  color: #0A2640;
+  margin-left: 5px;
+}
+.editPrfoileBtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.profileDescription {
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: 300;
+
+  /* background-color: green; */
+}
+
+.profileDetailsContainer {
+  width: 100%;
+  margin-top: 20px;
+  /* background-color: rebeccapurple; */
+}
+.sideHeading {
+  height: 35px;
+  width: 35px;
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  padding-left: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.profielDetailsForm {
+  width: 100%;
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 30px;
+  height: auto;
+}
+
+.inputContainer {
+  /* background-color: red; */
+  /* margin-top: 15px; */
+  padding: 15px;
+}
+.inputTitle {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.ProfileDetatilsInputBox {
+  width: 100%;
+  height: auro;
+  border-radius: 25px;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+.profileAditionalDetailsContainer {
+  background-color: #f3f3f3;
+  margin-top: 25px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.profileAditionalDetailsTitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+.profileAditonalDetalsBox {
+  padding: 25px;
+}
+.sideHeadingWithOutCircle {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: auto;
+  margin-top: 20px;
+}
+.inputReason {
+  height: 50px;
+  width: 75%;
+  border: none;
+  border-radius: 25px;
+  padding-left: 15px;
+  font-size: 16px;
+  min-width: 150px;
+}
+.deleteBtn {
+  background-color: #0A2640;
+  height: auto;
+  width: 120px;
+  border-radius: 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 13px;
+  min-width: 80px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.checkbox {
+  height: 18px;
+  width: 18px;
+  margin: 5px 10px;
+}
+
+.choose-file {
+  background: #0A2640;
+  border: 2px solid #0A2640;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Muli', sans-serif;
+  outline: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  transition: all 1s ease;
+  margin-left: 22px;
+}

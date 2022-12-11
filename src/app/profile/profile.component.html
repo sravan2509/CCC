@@ -1,0 +1,178 @@
+<app-navbar></app-navbar>
+
+<div>
+<div class="main-container">
+    <div class="first-container">
+    <div class="e"></div>
+    <div>
+        <img  style = "width:10%;margin-left: 300px;margin-top: -100px;" src="../../assets/images/Michele-Round-Circle-2020.png">
+    </div>
+    <div class="description">
+        <h3 style="margin-top:50px">Pooja</h3>
+        <p>Good at problem solving and excited to face the challanges in life.</p>
+    </div>
+    <div class="choose-file">
+       <input type="file" (change)="onFileSelected($event)">
+    </div>
+    
+
+    <div class="details-container">
+                    <div class="b">
+                        <div>
+                            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+                                <div class="form-group">
+                                    <label>Email*</label>
+                                    <input type="text" placeholder="Example@gmail.com" class="form-control" formControlName="email">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['email'].touched || submitted) && profileFormControl['email'].errors?.['required']">
+                                    Email is required
+                                </span>
+                                </div>
+            
+                                <div class="form-group">
+                                    <label>Date of birth*</label>
+                                    <input type="text" placeholder="Enter DOB" class="form-control" formControlName="dob">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['dob'].touched || submitted) && profileFormControl['dob'].errors?.['required']">
+                                    DOB is required
+                                </span>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div>
+
+                            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+                                <div class="form-group">
+                                    <label>Phone number*</label>
+                                    <input type="text" placeholder="Example@gmail.com" class="form-control" formControlName="phone">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['phone'].touched || submitted) && profileFormControl['phone'].errors?.['required']">
+                                    Phone is required
+                                </span>
+                                </div>
+            
+                                <div class="form-group">
+                                    <label>Gender*</label>
+                                    <input type="text" placeholder="Enter password" class="form-control" formControlName="gender">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['gender'].touched || submitted) && profileFormControl['gender'].errors?.['required']">
+                                    Gender is required
+                                </span>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                    <div class="c">Full-address</div>
+                    <div class="d">
+                        <div>
+                            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+                                <div class="form-group">
+                                    <label>Street*</label>
+                                    <input type="text" placeholder="Street name" class="form-control" formControlName="street">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['street'].touched || submitted) && profileFormControl['street'].errors?.['required']">
+                                    Street is required
+                                </span>
+                                </div>
+            
+                                <div class="form-group">
+                                    <label>City*</label>
+                                    <input type="text" placeholder="City name" class="form-control" formControlName="city">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['city'].touched || submitted) && profileFormControl['city'].errors?.['required']">
+                                    City is required
+                                </span>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        <div>
+                            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+
+                                <div class="form-group">
+                                    <label>Zipcode*</label>
+                                    <input type="text" placeholder="Enter Zipcode" class="form-control" formControlName="zipcode">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['zipcode'].touched || submitted) && profileFormControl['zipcode'].errors?.['required']">
+                                    Zipcode is required
+                                </span>
+                                </div>
+            
+                                <div class="form-group">
+                                    <label>State*</label>
+                                    <input type="text" placeholder="Enter state" class="form-control" formControlName="state">
+                                    <span class="text-danger"
+                                    *ngIf="(profileFormControl['state'].touched || submitted) && profileFormControl['state'].errors?.['required']">
+                                    State is required
+                                </span>
+                                </div>
+                                
+                            </form>
+                        </div>
+                        
+
+                    </div>
+                    <div class="save-button">
+                        <button class="save">SAVE</button>
+                    </div>
+    </div>
+</div>
+<div class="Second-container">
+    <div class="col12">
+        <h4>Challanges</h4>
+        <div class="a">
+            <div class="col121">
+                <div>Name of the Challlange</div>
+                <div class="col122">
+                    <div><button class="Accept-button">Accept</button></div>
+                    <div><button  class="reject-button">Reject</button></div>
+                </div>
+            </div>
+        </div>
+            
+        <div class="a">
+            <div class="col121">
+                <div>Name of the Challlange</div>
+                <div class="col122">
+                    <div><button class="Accept-button">Accept</button></div>
+                    <div><button  class="reject-button">Reject</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="a">
+            <div class="col121">
+                <div>Name of the Challlange</div>
+                <div class="col122">
+                    <div><button class="Accept-button">Accept</button></div>
+                    <div><button  class="reject-button">Reject</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="a">
+            <div class="col121">
+                <div>Name of the Challlange</div>
+                <div class="col122">
+                    <div><button class="Accept-button">Accept</button></div>
+                    <div><button  class="reject-button">Reject</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="a">
+            <div class="col121">
+                <div>Name of the Challlange</div>
+                <div class="col122">
+                    <div><button class="Accept-button">Accept</button></div>
+                    <div><button  class="reject-button">Reject</button></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>

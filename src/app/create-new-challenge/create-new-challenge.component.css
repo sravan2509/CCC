@@ -1,0 +1,68 @@
+.body-container{
+    background: #FFFFFF;
+    height: 90vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+.mainCont{
+    padding: 20px ;
+    border-radius: 20px;
+    margin: 10px 10px 20px 30px;
+    width: 75vw;
+}
+.from-container{
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 5%;
+}
+.fieldnames{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: 'Muli', sans-serif;
+    padding-bottom:10px;
+    opacity: 80%;
+
+}
+input{
+    width: 100%;
+    padding: 15px 0px 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    margin-bottom: 10px;
+
+}
+.field-container{
+    justify-content: space-between;
+}
+.field-container div{
+    width: 90%;
+    margin-right: 5%;
+}
+
+.savebtn{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Muli', sans-serif;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 15px;
+    margin-top: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.activeBtn{
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Muli', sans-serif;
+    text-align: center;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: auto;
+    margin: 15px;
+    background-color: lightgray;
+}

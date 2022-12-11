@@ -1,0 +1,66 @@
+<app-navbar></app-navbar>
+
+<div class="body-container">
+    <div class="main">
+        <div class="challenge-details" *ngIf="challengeDetails != undefined">
+            <div class="title">{{challengeDetails.title}}</div>
+
+            <div class="header">Description:</div>
+            <div class="desc">{{challengeDetails.description}}</div>
+            
+            <div class="header">Input:</div>
+            <div class="desc">{{challengeDetails.sampleInput}}</div>
+            
+            <div class="header">Input:</div>
+            <div class="desc">{{challengeDetails.sampleOutput}}</div>
+        
+        </div>
+        <!-- *ngIf="fiddle!= undefined" -->
+        <div class="container">
+            <div class="content-wrapper" >
+              <div class="title-bar"  style="margin-bottom: 10px;" >
+                  <mat-label>language : Python</mat-label>
+                  <div>
+                    <button mat-raised-button (click)="save()" style="margin-right:10px ;" >Save</button>
+                    <button mat-raised-button (click)="code = ''" style="margin-right:10px ;">Clear</button>
+                    <button mat-raised-button (click)="delete()">Delete</button>
+                  </div>
+              </div>
+          
+              <ngx-monaco-editor class="code-editor" [options]="editorOptions" [(ngModel)]="code"></ngx-monaco-editor>
+          
+              <mat-form-field>
+                <mat-label>StdIn</mat-label>
+                <textarea [(ngModel)]="stdin" matInput rows="6"></textarea>
+              </mat-form-field>
+            <div style="display:flex;">
+              <button (click)="run()" class="run-button" mat-raised-button>Run</button>
+              <button (click)="submit()" class="run-button" mat-raised-button>Submit</button>
+            </div>
+              <pre class="output">{{stdout}}</pre>
+            </div>
+          </div>
+          
+
+        <!-- <div style="height: 500px; border-color: black;">
+            <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (onInit)="onInit($event)"></ngx-monaco-editor>
+        </div> -->
+
+    </div>
+    <div class="sideCont">
+        <app-sidebar></app-sidebar>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <p>codeeditor works!</p> -->
+
+<!-- <div style="height: 500px; border-color: black;">
+    <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code" (onInit)="onInit($event)"></ngx-monaco-editor>
+</div> -->

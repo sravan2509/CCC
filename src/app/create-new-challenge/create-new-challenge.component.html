@@ -1,0 +1,58 @@
+
+
+<app-navbar></app-navbar>
+<div class="horizontal">
+    <div class="mainCont secondaryLightBg">
+
+        <div class="heading">Create Challenge</div>
+
+        <form class="from-container" [formGroup]="createChallengeForm">
+            <div>
+                <div class="fieldnames">Challenge Title</div>
+                <input type="text" formControlName="title" placeholder="Enter challenge name">
+            </div>
+            <div>
+                <div class="fieldnames">Challenege Description</div>
+                <input type="text" formControlName="description" placeholder="Enter challenge description">
+            </div>
+            <div>
+                <div class="fieldnames">Sample Input</div>
+                <input type="text" formControlName="sampleInput" placeholder="Enter sample input">
+            </div>
+            <div>
+                <div class="fieldnames">Sample Output</div>
+                <input type="text" formControlName="sampleOutput" placeholder="Enter sample output">
+            </div>
+
+            <div>
+                <div class="fieldnames">Testcases</div>
+            <div
+            formArrayName="testcasesArray"
+            *ngFor="let testcases of testcasesArrayFormGroups.controls; let i = index;"
+        >
+            <div [formGroupName]="i" style="display: flex;">
+            <input type="text" formControlName="input" placeholder="Enter input">
+            <input type="number" formControlName="output" placeholder="Enter output">
+            </div>
+        </div>
+        <button type="button" class="activeBtn" (click)="addChallenge()">+ Add Testcase</button>
+    </div>
+
+
+            <div>
+                <button class="savebtn primaryDarkBg primaryLight" type="submit" (click)="submit()"  *ngIf=!isEdit>create</button>
+                <button class="savebtn primaryDarkBg primaryLight"  type="submit" (click)="updateChallenge()" *ngIf=isEdit>update</button>
+            </div>
+
+
+
+        </form>
+    </div>
+<div class="sideCont">
+    <app-sidebar></app-sidebar>
+</div>
+</div>
+
+
+
+

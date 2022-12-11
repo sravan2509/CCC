@@ -1,0 +1,128 @@
+<app-navbar></app-navbar>
+
+<div class=" horizontal">
+<div class="profileContainer">
+  <div  class="profileHeadContainer">
+    <div style="display: flex;flex-direction: column;flex: 4;align-self: center;" >
+      <img  src={{profileUrl}} alt="profileImage" class="profileIcon" />
+     <div style="margin-top: 15px;">
+      <input type="file" name="uploadfile" id="img" (change)="selectimage($event)" style="display:none;"/>
+      <label for="img" class="choose-file">Upload Image</label>
+    </div>
+      </div>
+      <div class="profileHeadContent">
+        <div class="profileHeadContentHeader">
+          <div class="profileName">{{userObj['firstname'] | titlecase}}</div>
+        </div>
+
+        <div class="profileDescription inActive">
+          I solve problems in creative ways. At Kennesaw, where currently I am studing my masters in major IT, I
+          have learned the importance of applying classical strategies to modern-day projects.
+        </div>
+        <div class="profileDescription inActive">
+          {{userObj['description']}}
+        </div>
+      </div>
+
+  </div>
+    <div class="profileDetailsContainer ">
+      <div class="sideHeading">Details</div>
+      
+      <form [formGroup]="profileForm"  > 
+      <div class="profielDetailsForm">
+        <div  style="display: flex;flex-direction: row;width: 100%;justify-content: space-around;">
+          <div style="width:45%" >
+            <div class="inputContainer">
+              <p class="inputTitle">Email</p>
+              <input formControlName="email"
+                type="email"
+                class="ProfileDetatilsInputBox"
+               
+              />
+            </div>
+            <div class="inputContainer">
+              <p class="inputTitle">Date of Birth</p>
+              <input formControlName="dob"
+                class="ProfileDetatilsInputBox"
+              />
+            </div>
+          </div>
+          <div style="width:45%">
+            <div class="inputContainer">
+              <p class="inputTitle">Phone Number</p>
+              <input formControlName="phoneno"
+                type="number"
+                class="ProfileDetatilsInputBox"
+              />
+            </div>
+
+            <div class="inputContainer">
+              <p class="inputTitle">Gender</p>
+              <input formControlName="gender"
+                class="ProfileDetatilsInputBox"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="sideHeadingWithOutCircle">Full Address</div>
+        <div  style="display: flex;flex-direction: row;width: 100%;justify-content: space-around;">
+          <div style="width:45%">
+            <div class="inputContainer">
+              <p class="inputTitle">street</p>
+              <input formControlName="street"
+                class="ProfileDetatilsInputBox"
+              />
+            </div>
+            <div class="inputContainer">
+              <p class="inputTitle">zip code</p>
+              <input formControlName="zip"
+                class="ProfileDetatilsInputBox"
+              />
+            </div>
+          </div>
+          <div style="width:45%">
+            <div class="inputContainer">
+              <p class="inputTitle">City</p>
+              <input formControlName="city"
+                class="ProfileDetatilsInputBox"
+              />
+            </div>
+
+            <div class="inputContainer">
+              <p class="inputTitle">State</p>
+              <input formControlName="state"
+                class="ProfileDetatilsInputBox"
+              />
+            </div>
+          </div>
+        </div>
+        <button type="submit" (click)="updateProfile()"  class="saveBtn primaryLight"> update</button>
+      </div>
+
+      
+
+    </form>
+
+    </div>
+    <div class="profileAditionalDetailsContainer">
+      <div class="sideHeading">
+        Aditional <span style="margin-left: 5px">Details</span>
+      </div>
+      <div class="profileAditonalDetalsBox">
+        <div>
+          <p class="sideHeadingWithOutCircle">Delete Account</p>
+          <div style="margin-top: 10px">
+            <input type="text" placeholder="why?" class="inputReason" />
+            <button class="deleteBtn primaryLight" (click)="deleteAccount()">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sideCont">
+    <app-sidebar ></app-sidebar>
+</div>
+
+</div>
+

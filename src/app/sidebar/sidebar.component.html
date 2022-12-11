@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="heading">Challenges</div>
+    <div class="cardsContainer">
+        <div *ngFor = "let challenge of suggestions"> 
+            <div class="card primaryLightBg horizontal">
+                <div>
+                    <div class="title">{{challenge.title}}</div>
+                    <div class="button-container">
+                        <button class="activeBtn" (click)="acceptChallenge(challenge.challengeid)">Save</button>
+                        <!-- <button class="reject-button" (click)="rejectChallenge(challenge.challengeid)">Reject</button> -->
+                        <button class="inactiveBtn"(click)="viewChallenge(challenge.challengeid)">View</button>
+                    </div>
+                <!-- <button (click)= "onSelect(routine.routineid)" class="moreBtn primaryDarkBg primaryLight">More Details</button> -->
+                </div>
+            </div>
+        </div>
+        <!-- <div class="card">
+            <div class="title">Challenge Title</div>
+            <div class="button-container">
+                <button class="activeBtn">Accept</button>
+                <button class="inactiveBtn">Reject</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="title">Challenge Title</div>
+            <div class="button-container">
+                <button class="activeBtn">Accept</button>
+                <button class="inactiveBtn">Reject</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="title">Challenge Title</div>
+            <div class="button-container">
+                <button class="activeBtn">Accept</button>
+                <button class="inactiveBtn">Reject</button>
+            </div>
+        </div> -->
+        
+    </div>
+</div>

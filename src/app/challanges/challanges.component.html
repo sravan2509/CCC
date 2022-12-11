@@ -1,0 +1,82 @@
+
+<app-navbar></app-navbar>
+<div class="body-container">
+            <div class="main">
+                <button class="create-challange" routerLink="/create-challenge">+ Create new challange</button>
+
+                <p class="text1">Saved Challanges</p>
+
+                <!-- <div class="heading" *ngIf="acceptChallenges.length === 0"> No saved Challenges</div> -->
+
+                <mat-accordion class="expansion-panel">
+                <div *ngFor = "let challenge of acceptChallenges">
+                    <mat-expansion-panel class="mat-expansion-panel1" (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{challenge.title}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>{{challenge.description}}</p>
+                    <div class="button-container">
+                        <!-- <button class="Accept-button" (click)="acceptChallenge(challenge.challengeid)">Accept</button> -->
+                        <!-- <button class="reject-button" (click)="rejectChallenge(challenge.challengeid)">Reject</button> -->
+                        <button class="reject-button"(click)="viewChallenge(challenge.challengeid)">View</button>
+                    </div>
+                    <!-- <button class="button">Code</button> -->
+                    </mat-expansion-panel>
+                </div>
+                </mat-accordion>
+
+
+
+                <p class="text1">New Challanges</p>
+                <!-- <div class="heading" *ngIf="suggestions.length === 0"> No new Challenges</div> -->
+                <mat-accordion class="expansion-panel">
+                <div *ngFor = "let challenge of suggestions">
+                    <mat-expansion-panel class="mat-expansion-panel1" (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{challenge.title}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>{{challenge.description}}</p>
+                    <div class="button-container">
+                        <button class="Accept-button" (click)="acceptChallenge(challenge.challengeid)">Save</button>
+                        <!-- <button class="reject-button" (click)="rejectChallenge(challenge.challengeid)">Reject</button> -->
+                        <button class="reject-button"(click)="viewChallenge(challenge.challengeid)">View</button>
+                    </div>
+                    <!-- <button class="button">Code</button> -->
+                    </mat-expansion-panel>
+                </div>
+                </mat-accordion>
+
+
+                </div>
+
+                <div class="sideCont">
+                    <p class="text1">Created Challanges</p>
+                <mat-accordion class="expansion-panel">
+                <div *ngFor = "let challenge of createdChallenges">
+                    <mat-expansion-panel class="mat-expansion-panel" (opened)="panelOpenState = true"
+                                        (closed)="panelOpenState = false">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            {{challenge.title}}
+                        </mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <p>{{challenge.description}}</p>
+                    <div class="button-container">
+                        <!-- <button class="Accept-button" (click)="acceptChallenge(challenge.challengeid)">Accept</button> -->
+                        <!-- <button class="reject-button" (click)="rejectChallenge(challenge.challengeid)">Reject</button> -->
+                        <button class="Accept-button" (click)="editChallenge(challenge.challengeid)">Edit</button>
+                        <button class="reject-button" (click)="viewChallenge(challenge.challengeid)">View</button>
+                    </div>
+                    <!-- <button class="button">Code</button> -->
+                    </mat-expansion-panel>
+                </div>
+                </mat-accordion>
+                </div>
+  
+</div>
