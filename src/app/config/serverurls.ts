@@ -1,4 +1,4 @@
-export const serverUrl = "http://localhost:3000";
+export const serverUrl = "http://3.136.154.63:3000";
 export const signup = serverUrl + '/auth/signup';
 export const login = serverUrl + '/auth/login';
 export const update_user_details = serverUrl + '/user/edit-user-details';
